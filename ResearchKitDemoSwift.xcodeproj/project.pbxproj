@@ -12,7 +12,72 @@
 		007564DB1DC0A28000E016F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007564D91DC0A28000E016F1 /* Main.storyboard */; };
 		007564DD1DC0A28000E016F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007564DC1DC0A28000E016F1 /* Assets.xcassets */; };
 		007564E01DC0A28000E016F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007564DE1DC0A28000E016F1 /* LaunchScreen.storyboard */; };
+		007564FB1DC0A29B00E016F1 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007564F81DC0A28F00E016F1 /* CareKit.framework */; };
+		007564FC1DC0A29B00E016F1 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007564F81DC0A28F00E016F1 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		007564FF1DC0A29B00E016F1 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007564EE1DC0A28900E016F1 /* ResearchKit.framework */; };
+		007565001DC0A29B00E016F1 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007564EE1DC0A28900E016F1 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		007565051DC0B59F00E016F1 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007565041DC0B59F00E016F1 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		007564ED1DC0A28900E016F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 007564E71DC0A28800E016F1 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		007564EF1DC0A28900E016F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 007564E71DC0A28800E016F1 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
+		};
+		007564F71DC0A28F00E016F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 007564F11DC0A28F00E016F1 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		007564F91DC0A28F00E016F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 007564F11DC0A28F00E016F1 /* CareKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
+			remoteInfo = CareKitTests;
+		};
+		007564FD1DC0A29B00E016F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 007564F11DC0A28F00E016F1 /* CareKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
+			remoteInfo = CareKit;
+		};
+		007565011DC0A29B00E016F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 007564E71DC0A28800E016F1 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		007565031DC0A29B00E016F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				007565001DC0A29B00E016F1 /* ResearchKit.framework in Embed Frameworks */,
+				007564FC1DC0A29B00E016F1 /* CareKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		007564D21DC0A28000E016F1 /* ResearchKitDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResearchKitDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +87,9 @@
 		007564DC1DC0A28000E016F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		007564DF1DC0A28000E016F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		007564E11DC0A28000E016F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007564E71DC0A28800E016F1 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
+		007564F11DC0A28F00E016F1 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = ../carekit/CareKit.xcodeproj; sourceTree = "<group>"; };
+		007565041DC0B59F00E016F1 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007564FF1DC0A29B00E016F1 /* ResearchKit.framework in Frameworks */,
+				007564FB1DC0A29B00E016F1 /* CareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +108,8 @@
 		007564C91DC0A28000E016F1 = {
 			isa = PBXGroup;
 			children = (
+				007564F11DC0A28F00E016F1 /* CareKit.xcodeproj */,
+				007564E71DC0A28800E016F1 /* ResearchKit.xcodeproj */,
 				007564D41DC0A28000E016F1 /* ResearchKitDemoSwift */,
 				007564D31DC0A28000E016F1 /* Products */,
 			);
@@ -60,8 +132,27 @@
 				007564DC1DC0A28000E016F1 /* Assets.xcassets */,
 				007564DE1DC0A28000E016F1 /* LaunchScreen.storyboard */,
 				007564E11DC0A28000E016F1 /* Info.plist */,
+				007565041DC0B59F00E016F1 /* TabBarViewController.swift */,
 			);
 			path = ResearchKitDemoSwift;
+			sourceTree = "<group>";
+		};
+		007564E81DC0A28800E016F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				007564EE1DC0A28900E016F1 /* ResearchKit.framework */,
+				007564F01DC0A28900E016F1 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		007564F21DC0A28F00E016F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				007564F81DC0A28F00E016F1 /* CareKit.framework */,
+				007564FA1DC0A28F00E016F1 /* CareKitTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,10 +165,13 @@
 				007564CE1DC0A28000E016F1 /* Sources */,
 				007564CF1DC0A28000E016F1 /* Frameworks */,
 				007564D01DC0A28000E016F1 /* Resources */,
+				007565031DC0A29B00E016F1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				007564FE1DC0A29B00E016F1 /* PBXTargetDependency */,
+				007565021DC0A29B00E016F1 /* PBXTargetDependency */,
 			);
 			name = ResearchKitDemoSwift;
 			productName = ResearchKitDemoSwift;
@@ -111,12 +205,53 @@
 			mainGroup = 007564C91DC0A28000E016F1;
 			productRefGroup = 007564D31DC0A28000E016F1 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 007564F21DC0A28F00E016F1 /* Products */;
+					ProjectRef = 007564F11DC0A28F00E016F1 /* CareKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 007564E81DC0A28800E016F1 /* Products */;
+					ProjectRef = 007564E71DC0A28800E016F1 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				007564D11DC0A28000E016F1 /* ResearchKitDemoSwift */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		007564EE1DC0A28900E016F1 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 007564ED1DC0A28900E016F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		007564F01DC0A28900E016F1 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 007564EF1DC0A28900E016F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		007564F81DC0A28F00E016F1 /* CareKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CareKit.framework;
+			remoteRef = 007564F71DC0A28F00E016F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		007564FA1DC0A28F00E016F1 /* CareKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CareKitTests.xctest;
+			remoteRef = 007564F91DC0A28F00E016F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		007564D01DC0A28000E016F1 /* Resources */ = {
@@ -137,11 +272,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				007564D81DC0A28000E016F1 /* ViewController.swift in Sources */,
+				007565051DC0B59F00E016F1 /* TabBarViewController.swift in Sources */,
 				007564D61DC0A28000E016F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		007564FE1DC0A29B00E016F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CareKit;
+			targetProxy = 007564FD1DC0A29B00E016F1 /* PBXContainerItemProxy */;
+		};
+		007565021DC0A29B00E016F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 007565011DC0A29B00E016F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		007564D91DC0A28000E016F1 /* Main.storyboard */ = {
@@ -257,6 +406,7 @@
 		007564E51DC0A28000E016F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ResearchKitDemoSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -269,6 +419,7 @@
 		007564E61DC0A28000E016F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ResearchKitDemoSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
