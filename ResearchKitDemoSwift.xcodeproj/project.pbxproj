@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00666C5C1DC23ED1009EF67E /* CarePlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00666C5B1DC23ED1009EF67E /* CarePlanManager.swift */; };
+		00666C5F1DC24DD4009EF67E /* AssessmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00666C5E1DC24DD4009EF67E /* AssessmentViewController.swift */; };
 		007564D61DC0A28000E016F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007564D51DC0A28000E016F1 /* AppDelegate.swift */; };
 		007564D81DC0A28000E016F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007564D71DC0A28000E016F1 /* ViewController.swift */; };
 		007564DB1DC0A28000E016F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007564D91DC0A28000E016F1 /* Main.storyboard */; };
@@ -80,6 +82,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00666C5B1DC23ED1009EF67E /* CarePlanManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarePlanManager.swift; sourceTree = "<group>"; };
+		00666C5E1DC24DD4009EF67E /* AssessmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssessmentViewController.swift; sourceTree = "<group>"; };
 		007564D21DC0A28000E016F1 /* ResearchKitDemoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResearchKitDemoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007564D51DC0A28000E016F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		007564D71DC0A28000E016F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 				007564DE1DC0A28000E016F1 /* LaunchScreen.storyboard */,
 				007564E11DC0A28000E016F1 /* Info.plist */,
 				007565041DC0B59F00E016F1 /* TabBarViewController.swift */,
+				00666C5B1DC23ED1009EF67E /* CarePlanManager.swift */,
+				00666C5E1DC24DD4009EF67E /* AssessmentViewController.swift */,
 			);
 			path = ResearchKitDemoSwift;
 			sourceTree = "<group>";
@@ -272,8 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				007564D81DC0A28000E016F1 /* ViewController.swift in Sources */,
+				00666C5C1DC23ED1009EF67E /* CarePlanManager.swift in Sources */,
 				007565051DC0B59F00E016F1 /* TabBarViewController.swift in Sources */,
 				007564D61DC0A28000E016F1 /* AppDelegate.swift in Sources */,
+				00666C5F1DC24DD4009EF67E /* AssessmentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +456,7 @@
 				007564E61DC0A28000E016F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

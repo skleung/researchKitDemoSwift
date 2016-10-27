@@ -13,23 +13,6 @@ import ResearchKit
 class TabBarViewController: UITabBarController {
 
 }
-// MARK: - OCKSymptomTrackerViewControllerDelegate
-extension TabBarViewController: OCKSymptomTrackerViewControllerDelegate {
-    func symptomTrackerViewController(_ viewController: OCKSymptomTrackerViewController,
-                                      didSelectRowWithAssessmentEvent assessmentEvent: OCKCarePlanEvent) {
-        let identifier = assessmentEvent.activity.identifier
-        if (identifier == "painAssessment") {
-            let answerFormat = ORKValuePickerAnswerFormat.scale(withMaximumValue: 10, minimumValue: 1, defaultValue: .max, step: 1, vertical: false, maximumValueDescription: "High", minimumValueDescription: "Low")
-            let step = ORKQuestionStep.init(identifier: "painScaleQuestion", title: "How would you rate your pain?", answer: answerFormat)
-            let task = ORKOrderedTask.init(identifier: "painScaleTask", steps: [step])
-            let taskVC = ORKTaskViewController(task: task, taskRun: nil)
-            taskVC.delegate = self
-            present(taskVC, animated: true, completion: nil)
-        } else if (identifier == "tappingAssessment") {
-            
-        }
-    }
-}
 
 extension TabBarViewController: ORKTaskViewControllerDelegate {
     func taskViewController(_ taskViewController: ORKTaskViewController, didFinishWith
